@@ -1,0 +1,76 @@
+---
+title       : slide
+subtitle    : slidex
+author      : me
+job         : course taker
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax, quiz, bootstrap, interactive, shiny]
+#      {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Read-And-Delete
+
+1. Edit YAML front matter
+2. Write using R Markdown
+3. Use an empty line followed by three dashes to separate slides!
+
+--- .class #id 
+
+## Slide 2
+
+Test slide 2
+
+$x^2$
+$$\frac{-b \pm \sqrt{b^2 - 4 a c}} {2a}$$
+
+
+```{r, echo=FALSE}
+sum(1:10)
+x = c(1,2,3,8,9,10)
+x
+summary(x)
+```
+
+--- &radio
+## Question 3
+
+What is 1 + 1?
+
+1. 1
+2. _2_
+3. 3
+4. 10
+
+*** .hint
+It's between 1 and 3
+
+*** .explanation
+It's a matter of simple math
+
+--- .class #id 
+
+## Slide 4
+
+Test slide 4
+
+$x^3$
+$$\frac{-b \pm \sqrt{b^2 - 4 a c}} {2a}$$
+
+Must load knitr for R to work
+
+```{r, echo=FALSE}
+
+x = c(1,2,3,8,9,10,20,23)
+x
+summary(x)
+```
+
+
+
+
+
+
